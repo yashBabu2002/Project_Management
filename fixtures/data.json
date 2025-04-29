@@ -1,0 +1,118 @@
+[
+    {
+      "model": "authentication.customuser",
+      "pk": 1,
+      "fields": {
+        "username": "admin",
+        "email": "admin@example.com",
+        "password": "pbkdf2_sha256$260000$EXAMPLEHASH",  
+        "first_name": "Admin",
+        "last_name": "User",
+        "is_superuser": true,
+        "is_staff": true,
+        "role": "admin",
+        "is_active": true,
+        "date_joined": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "model": "authentication.customuser",
+      "pk": 2,
+      "fields": {
+        "username": "manager",
+        "email": "manager@example.com",
+        "password": "pbkdf2_sha256$260000$EXAMPLEHASH",  
+        "first_name": "Manager",
+        "last_name": "User",
+        "is_superuser": false,
+        "is_staff": true,
+        "role": "manager",
+        "is_active": true,
+        "date_joined": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "model": "authentication.customuser",
+      "pk": 3,
+      "fields": {
+        "username": "developer",
+        "email": "developer@example.com",
+        "password": "pbkdf2_sha256$260000$EXAMPLEHASH",  
+        "first_name": "Developer",
+        "last_name": "User",
+        "is_superuser": false,
+        "is_staff": false,
+        "role": "developer",
+        "is_active": true,
+        "date_joined": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "model": "projects.project",
+      "pk": 1,
+      "fields": {
+        "name": "Project Alpha",
+        "description": "This is the first project created for testing purposes.",
+        "created_at": "2025-04-30T00:00:00Z",
+        "updated_at": "2025-04-30T00:00:00Z",
+        "created_by": 1
+      }
+    },
+    {
+      "model": "projects.project",
+      "pk": 2,
+      "fields": {
+        "name": "Project Beta",
+        "description": "This is a dummy project used for testing the project API.",
+        "created_at": "2025-04-30T00:00:00Z",
+        "updated_at": "2025-04-30T00:00:00Z",
+        "created_by": 2
+      }
+    },
+    {
+      "model": "tasks.task",
+      "pk": 1,
+      "fields": {
+        "title": "Task One",
+        "description": "This is the first task assigned to the developer for testing.",
+        "project": 1,
+        "assigned_to": 3,
+        "due_date": "2025-05-05T00:00:00Z",
+        "status": "To-Do",
+        "priority": "High",
+        "created_at": "2025-04-30T00:00:00Z",
+        "updated_at": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "model": "tasks.task",
+      "pk": 2,
+      "fields": {
+        "title": "Task Two",
+        "description": "This is the second task for testing.",
+        "project": 2,
+        "assigned_to": 3,
+        "due_date": "2025-05-10T00:00:00Z",
+        "status": "In Progress",
+        "priority": "Medium",
+        "created_at": "2025-04-30T00:00:00Z",
+        "updated_at": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "model": "tasks.task",
+      "pk": 3,
+      "fields": {
+        "title": "Task Three",
+        "description": "This is the third task for testing purposes.",
+        "project": 1,
+        "assigned_to": 3,
+        "due_date": "2025-05-15T00:00:00Z",
+        "status": "Done",
+        "priority": "Low",
+        "created_at": "2025-04-30T00:00:00Z",
+        "updated_at": "2025-04-30T00:00:00Z"
+      }
+    }
+  ]
+  
