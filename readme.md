@@ -33,18 +33,18 @@ pip install -r requirements.txt
 
 ### 4. Set up PostgreSQL using Docker
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ### 5. Run migrations and create superuser
 ```bash
-docker-compose exec web python manage.py migrate
-docker-compose exec web python manage.py createsuperuser
+docker compose exec web python manage.py migrate
+docker compose exec web python manage.py createsuperuser
 ```
 
 ### 6. Load dummy data (optional)
 ```bash
-docker-compose exec web python manage.py loaddata data.json
+docker compose exec web python manage.py loaddata data.json
 ```
 
 ### 7. Access the app
