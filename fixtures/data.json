@@ -48,7 +48,7 @@
       }
     },
     {
-      "model": "projects.project",
+      "model": "project.project",
       "pk": 1,
       "fields": {
         "name": "Project Alpha",
@@ -59,7 +59,7 @@
       }
     },
     {
-      "model": "projects.project",
+      "model": "project.project",
       "pk": 2,
       "fields": {
         "name": "Project Beta",
@@ -70,7 +70,7 @@
       }
     },
     {
-      "model": "tasks.task",
+      "model": "project.task",
       "pk": 1,
       "fields": {
         "title": "Task One",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "model": "tasks.task",
+      "model": "project.task",
       "pk": 2,
       "fields": {
         "title": "Task Two",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "model": "tasks.task",
+      "model": "project.task",
       "pk": 3,
       "fields": {
         "title": "Task Three",
